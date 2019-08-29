@@ -12,17 +12,22 @@ SCRIPT
 
 $jenkinsscript = <<-SCRIPT
 
+sudo yum install wget -y
+sudo yum install java-1.8.0-openjdk -y 
+
+sudo cp /etc/profile /etc/profile_backup
+echo 'export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk' | sudo tee -a /etc/profile
+echo 'export JRE_HOME=/usr/lib/jvm/jre' | sudo tee -a /etc/profile
+source /etc/profile
+
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
 
 sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 
-sudo yum install java-1.8.0-openjdk -y 
-
 sudo yum install jenkins -y 
 
-sudo service firewalld restart
-sudo service jenkins start
-sudo chkconfig jenkins on 
+sudo systemctl start jenkins.service
+sudo systemctl enable jenkins.service 
 
 SCRIPT
 
@@ -30,6 +35,7 @@ SCRIPT
 # sudo firewall-cmd --permanent --add-port=8080/tcp
 # sudo firewall-cmd --zone=public --add-service=http --permanent
 # sudo firewall-cmd --reload
+# sudo service firewalld restart
 
 
 Vagrant.configure("2") do |config|

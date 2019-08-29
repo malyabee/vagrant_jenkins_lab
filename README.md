@@ -33,4 +33,15 @@
 ### accessing jenkins web UI
   open "http://localhost:8000/" url in  your browser to see jenkins environment.
 
+ in webUI you need to enter password which is stored at  /var/lib/jenkins/secrets/initialAdminPassword 
+
+
+
+ This Vagrant based jenkins lab created based on 
+ https://www.vultr.com/docs/how-to-install-jenkins-on-centos-7 
+
+ For other installations refer
+https://jenkins.io/doc/book/installing/
+
+
   
