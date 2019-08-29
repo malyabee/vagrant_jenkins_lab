@@ -30,7 +30,7 @@
     This Vagrant verified on Mac and Windows
 
 
-### accessing gitlab web UI
+### accessing jenkins web UI
   open "http://localhost:8000/" url in  your browser to see jenkins environment.
 
   
