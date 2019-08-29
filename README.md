@@ -1,4 +1,4 @@
-## IaaC project : git_lab  
+## IaaC project : jenkins_lab  
  A Vagrantfile to build signle node virtual envirnment to learn about jenkins adminstration for  CI/CD projects  
  vagrant_jenkins_lab/Vagrantfile  : This Vagrantfile contains the information needed to create a centOS/7 virtual machine and install git_lab
 
