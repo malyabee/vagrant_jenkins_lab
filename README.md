@@ -50,3 +50,10 @@ https://jenkins.io/doc/book/installing/
  https://github.com/ravikiran-srini/springExample
  
  
+ Jenkins :
+   -- Installation : https://www.youtube.com/watch?v=-0dkiteJEuE
+      UserManagement and  Roles : https://www.youtube.com/watch?v=jZOqcB32dYM
+      
+ 
+ 
+ 
