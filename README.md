@@ -56,4 +56,7 @@ https://jenkins.io/doc/book/installing/
       
  
  
+ GitHub Tutorials : 
+ https://github.com/miztiik/DevOps-Demos/tree/master/setup-jenkins
  
+ https://github.com/miztiik/DevOps-Demos/tree/master/setup-jenkins-slave
