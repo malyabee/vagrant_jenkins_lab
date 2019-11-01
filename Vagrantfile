@@ -28,6 +28,15 @@ sudo yum install jenkins -y
 
 sudo systemctl start jenkins.service
 sudo systemctl enable jenkins.service 
+sudo curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker vagrant
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo docker version
+sudo yum install net-tools -y
+
+sudo reboot
 
 SCRIPT
 
