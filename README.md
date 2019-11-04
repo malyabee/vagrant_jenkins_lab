@@ -66,7 +66,9 @@ https://jenkins.io/doc/book/installing/
  
 Continuous Delivery
    –involves a manual trigger to production.
+
 Continuous Deployment
     –involves automatic releases to production.
+
 Continuous Integration
     – is usually the initial part of both Continuous Delivery and Deployment, involving the testing and building of any new or updated source code. 
