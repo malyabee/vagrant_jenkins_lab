@@ -98,9 +98,11 @@ Build "Execute shell" commands
     pip install --quiet pylint
     pip install --upgrade pip
     pip install --quiet pytest
+    pip install --quiet wheel
 
-    pip install --quiet $WORKSPACE/  # where your setup.py lives
+     pip install --quiet $WORKSPACE/  # where your setup.py lives
 
+    python $WORKSPACE/setup.py sdist bdist_wheel
     pytest -p no:cacheprovider
 
     # nosetests --with-xcoverage --with-xunit --cover-package=myapp --cover-erase
