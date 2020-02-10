@@ -77,8 +77,39 @@ Continuous Integration
 ## Pyhton projects    
    
 Python sample project :
-  https://github.com/pypa/sampleproject
+
+Python References 
+     https://github.com/pypa/sampleproject
+
+Build "Execute shell" commands 
+
+    PYENV_HOME=$WORKSPACE/.sample1/
+
+    # Delete previously build virtualenv
+    if [ –d $PYENV_HOME ]; then
+      rm –rf $PYENV_HOME
+    fi
+
+    # Create and install necessary packages
+    python3 -m venv $PYENV_HOME
+    source $PYENV_HOME/bin/activate
+    # pip install –r envs/req.txt
+    pip install --quiet nosexcover
+    pip install --quiet pylint
+    pip install --upgrade pip
+    pip install --quiet pytest
+
+    pip install --quiet $WORKSPACE/  # where your setup.py lives
+
+    pytest -p no:cacheprovider
+
+    # nosetests --with-xcoverage --with-xunit --cover-package=myapp --cover-erase
+    # pylint -f parseable myapp/ | tee pylint.out
+
+
+ 
+
   
-Notes to build python based jobs
+ Notes to build python based jobs
 
     http://www.alexconrad.org/2011/10/jenkins-and-python.html
