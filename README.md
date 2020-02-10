@@ -78,3 +78,7 @@ Continuous Integration
    
 Python sample project :
   https://github.com/pypa/sampleproject
+  
+Notes to build python based jobs
+
+    http://www.alexconrad.org/2011/10/jenkins-and-python.html
