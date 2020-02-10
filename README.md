@@ -73,6 +73,8 @@ Continuous Deployment
 Continuous Integration
     – is usually the initial part of both Continuous Delivery and Deployment, involving the testing and building of any new or updated source code. 
     
-    
+   
+## Pyhton projects    
+   
 Python sample project :
   https://github.com/pypa/sampleproject
