@@ -12,7 +12,7 @@ SCRIPT
 
 $jenkinsscript = <<-SCRIPT
 
-sudo yum install wget -y
+sudo yum install wget git -y
 sudo yum install java-1.8.0-openjdk -y 
 
 sudo cp /etc/profile /etc/profile_backup
