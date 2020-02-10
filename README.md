@@ -115,3 +115,6 @@ Build "Execute shell" commands
  Notes to build python based jobs
 
     http://www.alexconrad.org/2011/10/jenkins-and-python.html
+    
+    
+    https://chrigl.de/posts/2013/08/14/integration-of-pylint-into-jenkins.html
